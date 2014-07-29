@@ -1,0 +1,325 @@
+#siteNav
+{
+	height: 28px;
+	width: 100%;
+	background: url("/Img/good_dh.jpg") repeat-x;
+	line-height: 28px;
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+}
+#siteContent
+{
+	text-align: center;
+	position: absolute;
+	top: 28px;
+	width: 100%;
+}
+#siteContent table, #siteContent div
+{
+	margin: 0 auto;
+}
+.NaviImage
+{
+	width: 34px;
+	height: 26px;
+	float: left;
+}
+.title_white
+{
+	font-weight: bold;
+	font-size: 13px;
+	color: #ffffff;
+}
+
+.txtbold
+{
+	font-weight: bold;
+	color: #222222;
+}
+.txtredb
+{
+	font-weight: bold;
+	color: #FF0000;
+}
+.gvTd
+{
+	border: 1px solid #999999;
+}
+INPUT.Button
+{
+	font-weight: normal;
+	background-color: #357eb5;
+	background-image: url('../images/bg-button.jpg');
+	background-repeat: repeat-x;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	vertical-align: middle;
+	border: 2px solid #aaaaaa;
+}
+
+.cTrOddMouseOut
+{
+	background-color: #FFFFFF;
+	cursor: hand;
+}
+.cTrOddMouseOver
+{
+	background-color: #C8DDF3;
+	cursor: hand;
+}
+.cTrEvenMouseOut
+{
+	background-color: #E4F1FF;
+	cursor: hand;
+}
+.cTrEvenMouseOver
+{
+	background-color: #C8DDF3;
+	cursor: hand;
+}
+
+.titleRow
+{
+	text-align: left;
+	font-weight: bold;
+	font-size: 13px;
+	color: #ffffff;
+	width: 100%;
+	/*background-image: url(/images/Hbg.jpg);*/
+	height: 28px;
+	line-height: 28px;
+	background-color: #98c2ec;
+}
+.tbHeader
+{
+	background-image: url(../images/Hbg2.jpg);
+	font-size: 10pt;
+}
+.tableBorder
+{
+	border: 1px solid #B6B9CB;
+	background-color: #EFF6FE;
+}
+.tableBorder tr
+{
+	height: 30px;
+}
+.colortableBorder
+{
+	border: 1px solid #B6B9CB;
+	background-color: #f0f0f0;
+}
+.colortd
+{
+	/*background-color: #f0f0f0;*/
+	font-weight: bold;
+	text-align: right;
+}
+.colortdleft
+{
+	/*background-color: #f0f0f0;*/
+	font-weight: bold;
+	text-align: left;
+}
+.colortdmiddle
+{
+	/*background-color: #f0f0f0;*/
+	font-weight: bold;
+	text-align: center;
+}
+.gridtd
+{
+	border: 1px solid #B6B9CB;
+}
+
+.contenttd
+{
+	text-align: left;
+}
+.contenttdMiddle
+{
+	text-align: center;
+}
+.mp-table
+{
+	width: 100%;
+	line-height: 30px;
+	border-left: solid 1px #B6B9CB;
+	border-top: solid 1px #B6B9CB;
+	background-color: #EFF6FE;
+}
+.mp-table tr
+{
+	height: 30px;
+}
+.mp-table td
+{
+	border-right: solid 1px #B6B9CB;
+	border-bottom: solid 1px #B6B9CB;
+}
+.mp-table .colortd
+{
+	padding-right: 10px;
+}
+.mp-table .contenttd
+{
+	padding-left: 10px;
+}
+.mp-table .header
+{
+	height: 40px;
+	line-height: 40px;
+	background-image: url(../images/Hbg2.jpg);
+}
+.mp-table .header td
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+}
+.headertable
+{
+	background: f0f0f0;	
+	font-weight: bold;
+	font-size: 13px;
+}
+.headertable tr
+{ height:20px; line-height:20px;}
+.headertable td
+{
+	border: none;
+}
+.SepBorder
+{
+	border-top-width: 0px;
+	border-left-width: 0px;
+	font-size: 1px;
+	border-bottom: Gray1pxsolid;
+	border-right-width: 0px;
+}
+.TopBorder
+{
+	border-right: Gray1pxsolid;
+	border-top: Gray1pxsolid;
+	background: #DCDCDC;
+	border-left: Gray1pxsolid;
+	color: black;
+	border-bottom: Gray1pxsolid;
+}
+.ContentBorder
+{
+	border-right: Gray1pxsolid;
+	border-top: Gray0pxsolid;
+	border-left: Gray1pxsolid;
+	border-bottom: Gray1pxsolid;
+	height: 100%;
+	width: 100%;
+}
+.SelectedTopBorder
+{
+	border-top: 1px solid white;
+	border-left: none;
+	border-right: 1px solid #aaaaaa;
+	border-bottom: none;
+	text-decoration: none;
+	background-color: #bbbbbb;
+	text-align: center;
+	font-size: small;
+	font-weight: bold;
+}
+.contentwrapper
+{
+	width: 90%;
+	min-width: 800px;
+}
+.Tab
+{
+	width: 730px;
+	text-align: left;
+	border-collapse: collapse;
+}
+.Tab td
+{
+	border: solid 1px;
+	height: 40px;
+}
+.print
+{
+	width: 730px;
+}
+.userselect
+{
+	position: absolute;
+	z-index: 1000;
+	text-align: left;
+	background-color: #ddddcc;
+	display: none;
+	width: 270px;
+	height: 100px;
+}
+#siteContent .clearmargin, #siteContent .clearmargin div, #siteContent .clearmargin table
+{
+	margin: 0px;
+}
+
+.datatree
+{
+	z-index: 1000;
+	position: absolute;
+	text-align: left;
+	background-color: #ddddcc;
+	display: none;
+	border: solid 2px #e5e5e5;
+}
+.datatree tr
+{
+	height: 20px;
+}
+/* use a semi-transparent image for the overlay */
+#overlay
+{
+	background: url(/images/white.png) no-repeat;
+	height: 526px;
+	width: 900px;
+	display: none;
+	z-index: 1000;
+}
+#overlay .close
+{
+	position: absolute;
+	display: block;
+	width: 36px;
+	height: 36px;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	background: url(/images/close.png) no-repeat;
+	z-index: 10001;
+}
+
+/* container for external content. uses vertical scrollbar, if needed */
+#overlay .contenttop
+{
+	height: 60px;
+	position: relative;
+}
+#overlay .contenttop .contenttitle
+{
+	padding: 30px 0px 0px 50px;
+	color: rgb(45,90,195);
+	font-size: 18px;
+}
+div.contentWrap
+{
+	height: 426px;
+	width: 800px;
+	margin: 0px auto;
+	overflow-y: auto;
+}
+.seperator
+{
+	height:5px;
+	clear:both;
+	}

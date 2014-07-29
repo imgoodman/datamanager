@@ -1,0 +1,1369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F307B77-9B4F-4C42-8369-5033E9175BBB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App.Web</RootNamespace>
+    <AssemblyName>App.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="aspnetpager">
+      <HintPath>..\..\..\..\SDKDv2\SDKD.WebApp\bin\aspnetpager.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\..\SharpZipLib_0860_Bin\net-20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\MyProjects\SANY\SANY\SANY.Web\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.aspx" />
+    <Content Include="auth.aspx" />
+    <Content Include="BOM\Add.aspx" />
+    <Content Include="BOM\Forward.aspx" />
+    <Content Include="BOM\Instance.aspx" />
+    <Content Include="BOM\List.aspx" />
+    <Content Include="BOM\Profile.aspx" />
+    <Content Include="BOM\StaInstance.aspx" />
+    <Content Include="Controls\Category.ascx" />
+    <Content Include="Controls\CommonFileUpload.ascx" />
+    <Content Include="Controls\DocObjectSelect.ascx" />
+    <Content Include="Controls\DocTypeSelect.ascx" />
+    <Content Include="Controls\InventoryProfile.ascx" />
+    <Content Include="CSS\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="denied.aspx" />
+    <Content Include="DeptManager.aspx" />
+    <Content Include="DocConfig\Add.aspx" />
+    <Content Include="DocConfig\AttrRelate.aspx" />
+    <Content Include="DocConfig\AttrRelationList.aspx" />
+    <Content Include="DocConfig\GridViewList.aspx" />
+    <Content Include="DocConfig\List.aspx" />
+    <Content Include="DocConfig\ListTemp.aspx" />
+    <Content Include="DocConfig\Profile.aspx" />
+    <Content Include="DocConfig\ProfileTemp.aspx" />
+    <Content Include="DocConfig\StepAdd.aspx" />
+    <Content Include="DocumentType.aspx" />
+    <Content Include="Doc\Add.aspx" />
+    <Content Include="Doc\Connect.aspx" />
+    <Content Include="Doc\DocInstanceImport.aspx" />
+    <Content Include="Doc\DocRedundantCheck.aspx" />
+    <Content Include="Doc\ExpCheck.aspx" />
+    <Content Include="Doc\Forward.aspx" />
+    <Content Include="Doc\Knowledge.aspx" />
+    <Content Include="Doc\List.aspx" />
+    <Content Include="Doc\MyList.aspx" />
+    <Content Include="Doc\MyTableList.aspx" />
+    <Content Include="Doc\Package.aspx" />
+    <Content Include="Doc\Profile.aspx" />
+    <Content Include="Doc\Search.aspx" />
+    <Content Include="Doc\TableList.aspx" />
+    <Content Include="Doc\Transfer.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Img\add.jpg" />
+    <Content Include="Img\close.gif" />
+    <Content Include="Img\Edit.jpg" />
+    <Content Include="Img\Manage.jpg" />
+    <Content Include="includes\Category.js" />
+    <Content Include="includes\JQScript.js" />
+    <Content Include="InventoryMng\Add.aspx" />
+    <Content Include="InventoryMng\AddDocAttrs.aspx" />
+    <Content Include="InventoryMng\AddDocs.aspx" />
+    <Content Include="InventoryMng\AddSave.aspx" />
+    <Content Include="InventoryMng\DocInstanceChoose.aspx" />
+    <Content Include="InventoryMng\DocInstancesChoose.aspx" />
+    <Content Include="InventoryMng\InstanceAdd.aspx" />
+    <Content Include="InventoryMng\InstanceList.aspx" />
+    <Content Include="InventoryMng\InventoryType.aspx" />
+    <Content Include="InventoryMng\List.aspx" />
+    <Content Include="InventoryMng\Profile.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="PwdManager.aspx" />
+    <Content Include="resources\css\flick\images\animated-overlay.gif" />
+    <Content Include="resources\css\flick\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="resources\css\flick\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="resources\css\flick\images\ui-bg_flat_55_ffffff_40x100.png" />
+    <Content Include="resources\css\flick\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="resources\css\flick\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="resources\css\flick\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <Content Include="resources\css\flick\images\ui-bg_highlight-soft_25_0073ea_1x100.png" />
+    <Content Include="resources\css\flick\images\ui-bg_highlight-soft_50_dddddd_1x100.png" />
+    <Content Include="resources\css\flick\images\ui-icons_0073ea_256x240.png" />
+    <Content Include="resources\css\flick\images\ui-icons_454545_256x240.png" />
+    <Content Include="resources\css\flick\images\ui-icons_666666_256x240.png" />
+    <Content Include="resources\css\flick\images\ui-icons_ff0084_256x240.png" />
+    <Content Include="resources\css\flick\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="resources\css\flick\jquery-ui-1.10.4.custom.css" />
+    <Content Include="resources\css\flick\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="resources\css\infoTip.css" />
+    <Content Include="resources\css\jquery.loader.min.css" />
+    <Content Include="resources\css\login.css" />
+    <Content Include="resources\css\main.css" />
+    <Content Include="resources\css\reset.css" />
+    <Content Include="resources\css\uploadify.css" />
+    <Content Include="resources\dist\jstree.js" />
+    <Content Include="resources\dist\jstree.min.js" />
+    <Content Include="resources\dist\libs\jquery.js" />
+    <Content Include="resources\dist\libs\jquery.ui.touch.js" />
+    <Content Include="resources\dist\libs\require.js" />
+    <Content Include="resources\dist\themes\default\32px.png" />
+    <Content Include="resources\dist\themes\default\40px.png" />
+    <Content Include="resources\dist\themes\default\style.css" />
+    <Content Include="resources\dist\themes\default\style.min.css" />
+    <Content Include="resources\dist\themes\default\throbber.gif" />
+    <Content Include="resources\img\404.jpg" />
+    <Content Include="resources\img\accept.png" />
+    <Content Include="resources\img\ajax-loader.gif" />
+    <Content Include="resources\img\body-bg.png" />
+    <Content Include="resources\img\close-tip.png" />
+    <Content Include="resources\img\error.png" />
+    <Content Include="resources\img\flogo.jpg" />
+    <Content Include="resources\img\headerbg.jpg" />
+    <Content Include="resources\img\info.png" />
+    <Content Include="resources\img\uploadify-cancel.png" />
+    <Content Include="resources\img\warning.png" />
+    <Content Include="resources\jqwidgets\jqxchart.js" />
+    <Content Include="resources\jqwidgets\jqxcore.js" />
+    <Content Include="resources\jqwidgets\jqxdata.js" />
+    <Content Include="resources\jqwidgets\jqxdraw.js" />
+    <Content Include="resources\jqwidgets\styles\images\backgroundTop.png" />
+    <Content Include="resources\jqwidgets\styles\images\backImage.png" />
+    <Content Include="resources\jqwidgets\styles\images\bg_black.png" />
+    <Content Include="resources\jqwidgets\styles\images\bg_blackhover.png" />
+    <Content Include="resources\jqwidgets\styles\images\bg_blackhover_horizontal.png" />
+    <Content Include="resources\jqwidgets\styles\images\bg_blackpressed.png" />
+    <Content Include="resources\jqwidgets\styles\images\bg_blackpressed_horizontal.png" />
+    <Content Include="resources\jqwidgets\styles\images\bg_black_horizontal.png" />
+    <Content Include="resources\jqwidgets\styles\images\bg_blueenergy.png" />
+    <Content Include="resources\jqwidgets\styles\images\bg_darkblue.png" />
+    <Content Include="resources\jqwidgets\styles\images\bg_darkbluehover.png" />
+    <Content Include="resources\jqwidgets\styles\images\bg_darkbluepressed.png" />
+    <Content Include="resources\jqwidgets\styles\images\blackbackground.png" />
+    <Content Include="resources\jqwidgets\styles\images\black_gradient.png" />
+    <Content Include="resources\jqwidgets\styles\images\check_black.png" />
+    <Content Include="resources\jqwidgets\styles\images\check_blue.png" />
+    <Content Include="resources\jqwidgets\styles\images\check_blue_indeterminate.png" />
+    <Content Include="resources\jqwidgets\styles\images\check_disabled.png" />
+    <Content Include="resources\jqwidgets\styles\images\check_indeterminate_black.png" />
+    <Content Include="resources\jqwidgets\styles\images\check_indeterminate_disabled.png" />
+    <Content Include="resources\jqwidgets\styles\images\check_indeterminate_white.png" />
+    <Content Include="resources\jqwidgets\styles\images\check_lightblue.png" />
+    <Content Include="resources\jqwidgets\styles\images\check_lightblue_indeterminate.png" />
+    <Content Include="resources\jqwidgets\styles\images\check_white.png" />
+    <Content Include="resources\jqwidgets\styles\images\close.png" />
+    <Content Include="resources\jqwidgets\styles\images\close_blue.png" />
+    <Content Include="resources\jqwidgets\styles\images\close_white.png" />
+    <Content Include="resources\jqwidgets\styles\images\colorpicker\bar-hue.png" />
+    <Content Include="resources\jqwidgets\styles\images\colorpicker\bar-saturation.png" />
+    <Content Include="resources\jqwidgets\styles\images\colorpicker\map-hue.png" />
+    <Content Include="resources\jqwidgets\styles\images\colorpicker\map-saturation-overlay.png" />
+    <Content Include="resources\jqwidgets\styles\images\colorpicker\map-saturation.png" />
+    <Content Include="resources\jqwidgets\styles\images\colorpicker\ReadMe.txt" />
+    <Content Include="resources\jqwidgets\styles\images\crosshair-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\crosshair.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ReadMe.txt" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-icons_222222_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-icons_a83300_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-icons_cccccc_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkness\ui-icons_ffffff_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\darkred_gradient.png" />
+    <Content Include="resources\jqwidgets\styles\images\drag.png" />
+    <Content Include="resources\jqwidgets\styles\images\dragcancel.png" />
+    <Content Include="resources\jqwidgets\styles\images\filter.png" />
+    <Content Include="resources\jqwidgets\styles\images\html_editor.png" />
+    <Content Include="resources\jqwidgets\styles\images\html_editor_white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-calendar-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-calendar.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-cancel-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-cancel.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-delete-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-delete.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-down-blue.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-down-transparent.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-down-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-down.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-edit-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-edit.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-first-blue.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-first-transparent.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-first-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-first.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-last-blue.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-last-transparent.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-last-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-last.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-left-blue.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-left-transparent.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-left-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-left.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-menu-minimized-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-menu-minimized.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-right-blue.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-right-transparent.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-right-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-right.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-save-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-save.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-showpassword-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-showpassword.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-up-blue.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-up-transparent.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-up-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\icon-up.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ReadMe.txt" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-bg_diagonals-small_0_aaaaaa_40x40.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-bg_diagonals-thick_15_444444_40x40.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-bg_diagonals-thick_95_ffdc2e_40x40.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-bg_glass_55_fbf5d0_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-bg_highlight-hard_30_285c00_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-bg_highlight-soft_33_3a8104_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-bg_highlight-soft_50_4eb305_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-bg_highlight-soft_60_4ca20b_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-bg_inset-soft_10_285c00_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-icons_4eb305_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-icons_72b42d_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\le-frog\ui-icons_ffffff_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\icon-first.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\icon-last.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ReadMe.txt" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-icons_222222_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-icons_228ef1_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-icons_ef8c08_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-icons_ffd27a_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\lightness\ui-icons_ffffff_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\loader.gif" />
+    <Content Include="resources\jqwidgets\styles\images\menubutton.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-down-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-down.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-first-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-first.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-last-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-last.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-left-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-left.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-right - Copy.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-right-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-right.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-up-white.png" />
+    <Content Include="resources\jqwidgets\styles\images\metro-icon-up.png" />
+    <Content Include="resources\jqwidgets\styles\images\multi-arrow.gif" />
+    <Content Include="resources\jqwidgets\styles\images\office-icon-down.png" />
+    <Content Include="resources\jqwidgets\styles\images\office-icon-first.png" />
+    <Content Include="resources\jqwidgets\styles\images\office-icon-last.png" />
+    <Content Include="resources\jqwidgets\styles\images\office-icon-left.png" />
+    <Content Include="resources\jqwidgets\styles\images\office-icon-right.png" />
+    <Content Include="resources\jqwidgets\styles\images\office-icon-up.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ReadMe.txt" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-bg_flat_55_c0402a_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-bg_flat_55_eeeeee_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-bg_glass_35_dddddd_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-bg_inset-hard_75_999999_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-icons_3383bb_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-icons_454545_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-icons_70b2e1_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-icons_999999_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\overcast\ui-icons_fbc856_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\plus.png" />
+    <Content Include="resources\jqwidgets\styles\images\plus_white.png" />
+    <Content Include="resources\jqwidgets\styles\images\pointer.png" />
+    <Content Include="resources\jqwidgets\styles\images\rangebar_classic.png" />
+    <Content Include="resources\jqwidgets\styles\images\rangebar_darkblue.png" />
+    <Content Include="resources\jqwidgets\styles\images\rangebar_shinyblack.png" />
+    <Content Include="resources\jqwidgets\styles\images\rangebar_summer.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\icon-first.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\icon-last.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ReadMe.txt" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-icons_217bc0_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-icons_2e83ff_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-icons_469bdd_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-icons_6da8d5_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\redmond\ui-icons_f9bd01_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\red_arrow_down.png" />
+    <Content Include="resources\jqwidgets\styles\images\red_arrow_up.png" />
+    <Content Include="resources\jqwidgets\styles\images\red_gradient.png" />
+    <Content Include="resources\jqwidgets\styles\images\roundbg_check_black.png" />
+    <Content Include="resources\jqwidgets\styles\images\roundbg_check_disabled.png" />
+    <Content Include="resources\jqwidgets\styles\images\roundbg_check_indeterminate.png" />
+    <Content Include="resources\jqwidgets\styles\images\roundbg_check_white.png" />
+    <Content Include="resources\jqwidgets\styles\images\roundbg_classic_hover.png" />
+    <Content Include="resources\jqwidgets\styles\images\roundbg_classic_normal.png" />
+    <Content Include="resources\jqwidgets\styles\images\roundbg_disabled.png" />
+    <Content Include="resources\jqwidgets\styles\images\search.png" />
+    <Content Include="resources\jqwidgets\styles\images\search_white.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ReadMe.txt" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-icons_222222_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-icons_2e83ff_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-icons_454545_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-icons_888888_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\smoothness\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\sortasc.png" />
+    <Content Include="resources\jqwidgets\styles\images\sortascbutton.png" />
+    <Content Include="resources\jqwidgets\styles\images\sortdesc.png" />
+    <Content Include="resources\jqwidgets\styles\images\sortdescbutton.png" />
+    <Content Include="resources\jqwidgets\styles\images\sortremove.png" />
+    <Content Include="resources\jqwidgets\styles\images\star.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ReadMe.txt" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-bg_flat_55_999999_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-icons_0078ae_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-icons_056b93_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-icons_e0fdff_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-icons_f5e175_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-icons_f7a50d_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\start\ui-icons_fcd113_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\star_disabled.png" />
+    <Content Include="resources\jqwidgets\styles\images\star_hover.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ReadMe.txt" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-icons_bd7b00_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-icons_d19405_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-icons_eb990f_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-icons_ed9f26_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-icons_fadc7a_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\sunny\ui-icons_ffe180_256x240.png" />
+    <Content Include="resources\jqwidgets\styles\images\tick.png" />
+    <Content Include="resources\jqwidgets\styles\images\track_classic.png" />
+    <Content Include="resources\jqwidgets\styles\images\track_darkblue.png" />
+    <Content Include="resources\jqwidgets\styles\images\track_shinyblack.png" />
+    <Content Include="resources\jqwidgets\styles\images\track_summer.png" />
+    <Content Include="resources\jqwidgets\styles\images\wp_check_indeterminate_white.png" />
+    <Content Include="resources\jqwidgets\styles\images\wp_check_white.png" />
+    <Content Include="resources\jqwidgets\styles\jqx.base.css" />
+    <Content Include="resources\js\infoTip.js" />
+    <Content Include="resources\js\jquery-1.10.2.js" />
+    <Content Include="resources\js\jquery-1.11.0.min.js" />
+    <Content Include="resources\js\jquery-1.7.2.min.js" />
+    <Content Include="resources\js\jquery-1.8.3.min.js" />
+    <Content Include="resources\js\jquery-1.9.1.min.js" />
+    <Content Include="resources\js\jquery-ui-1.10.4.custom.js" />
+    <Content Include="resources\js\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="resources\js\jquery.app.js" />
+    <Content Include="resources\js\jquery.loader.min.js" />
+    <Content Include="resources\js\jquery.uploadify-3.1.min.js" />
+    <Content Include="resources\js\json2.js" />
+    <Content Include="resources\uploadify-v3.1\Change Log.txt" />
+    <Content Include="resources\uploadify-v3.1\jquery.uploadify-3.1.js" />
+    <Content Include="resources\uploadify-v3.1\jquery.uploadify-3.1.min.js" />
+    <Content Include="resources\uploadify-v3.1\license.txt" />
+    <Content Include="resources\uploadify-v3.1\uploadify-cancel.png" />
+    <Content Include="resources\uploadify-v3.1\uploadify.css" />
+    <Content Include="resources\uploadify-v3.1\uploadify.swf" />
+    <Content Include="RoleManager.aspx" />
+    <Content Include="test.aspx" />
+    <Content Include="UserManager.aspx" />
+    <Content Include="UserRole.aspx" />
+    <Content Include="util\correctCreators.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="auth.aspx.cs">
+      <DependentUpon>auth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="auth.aspx.designer.cs">
+      <DependentUpon>auth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BOM\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\Forward.aspx.cs">
+      <DependentUpon>Forward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BOM\Forward.aspx.designer.cs">
+      <DependentUpon>Forward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\Instance.aspx.cs">
+      <DependentUpon>Instance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BOM\Instance.aspx.designer.cs">
+      <DependentUpon>Instance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BOM\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BOM\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BOM\StaInstance.aspx.cs">
+      <DependentUpon>StaInstance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BOM\StaInstance.aspx.designer.cs">
+      <DependentUpon>StaInstance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Category.ascx.cs">
+      <DependentUpon>Category.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Category.ascx.designer.cs">
+      <DependentUpon>Category.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CommonFileUpload.ascx.cs">
+      <DependentUpon>CommonFileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CommonFileUpload.ascx.designer.cs">
+      <DependentUpon>CommonFileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DocObjectSelect.ascx.cs">
+      <DependentUpon>DocObjectSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DocObjectSelect.ascx.designer.cs">
+      <DependentUpon>DocObjectSelect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DocTypeSelect.ascx.cs">
+      <DependentUpon>DocTypeSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DocTypeSelect.ascx.designer.cs">
+      <DependentUpon>DocTypeSelect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InventoryProfile.ascx.cs">
+      <DependentUpon>InventoryProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\InventoryProfile.ascx.designer.cs">
+      <DependentUpon>InventoryProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="denied.aspx.cs">
+      <DependentUpon>denied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="denied.aspx.designer.cs">
+      <DependentUpon>denied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeptManager.aspx.cs">
+      <DependentUpon>DeptManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeptManager.aspx.designer.cs">
+      <DependentUpon>DeptManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocConfig\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocConfig\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocConfig\AttrRelate.aspx.cs">
+      <DependentUpon>AttrRelate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocConfig\AttrRelate.aspx.designer.cs">
+      <DependentUpon>AttrRelate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocConfig\AttrRelationList.aspx.cs">
+      <DependentUpon>AttrRelationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocConfig\AttrRelationList.aspx.designer.cs">
+      <DependentUpon>AttrRelationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocConfig\GridViewList.aspx.cs">
+      <DependentUpon>GridViewList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocConfig\GridViewList.aspx.designer.cs">
+      <DependentUpon>GridViewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocConfig\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocConfig\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocConfig\ListTemp.aspx.cs">
+      <DependentUpon>ListTemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocConfig\ListTemp.aspx.designer.cs">
+      <DependentUpon>ListTemp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocConfig\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocConfig\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocConfig\ProfileTemp.aspx.cs">
+      <DependentUpon>ProfileTemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocConfig\ProfileTemp.aspx.designer.cs">
+      <DependentUpon>ProfileTemp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocConfig\StepAdd.aspx.cs">
+      <DependentUpon>StepAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocConfig\StepAdd.aspx.designer.cs">
+      <DependentUpon>StepAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentType.aspx.cs">
+      <DependentUpon>DocumentType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentType.aspx.designer.cs">
+      <DependentUpon>DocumentType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\Connect.aspx.cs">
+      <DependentUpon>Connect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\Connect.aspx.designer.cs">
+      <DependentUpon>Connect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\DocInstanceImport.aspx.cs">
+      <DependentUpon>DocInstanceImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\DocInstanceImport.aspx.designer.cs">
+      <DependentUpon>DocInstanceImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\DocRedundantCheck.aspx.cs">
+      <DependentUpon>DocRedundantCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\DocRedundantCheck.aspx.designer.cs">
+      <DependentUpon>DocRedundantCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\ExpCheck.aspx.cs">
+      <DependentUpon>ExpCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\ExpCheck.aspx.designer.cs">
+      <DependentUpon>ExpCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\Forward.aspx.cs">
+      <DependentUpon>Forward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\Forward.aspx.designer.cs">
+      <DependentUpon>Forward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\Knowledge.aspx.cs">
+      <DependentUpon>Knowledge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\Knowledge.aspx.designer.cs">
+      <DependentUpon>Knowledge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\MyList.aspx.cs">
+      <DependentUpon>MyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\MyList.aspx.designer.cs">
+      <DependentUpon>MyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\MyTableList.aspx.cs">
+      <DependentUpon>MyTableList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\MyTableList.aspx.designer.cs">
+      <DependentUpon>MyTableList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\Package.aspx.cs">
+      <DependentUpon>Package.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\Package.aspx.designer.cs">
+      <DependentUpon>Package.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\TableList.aspx.cs">
+      <DependentUpon>TableList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\TableList.aspx.designer.cs">
+      <DependentUpon>TableList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doc\Transfer.aspx.cs">
+      <DependentUpon>Transfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doc\Transfer.aspx.designer.cs">
+      <DependentUpon>Transfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\activateBOM.ashx.cs">
+      <DependentUpon>activateBOM.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\addBOM_Basic.ashx.cs">
+      <DependentUpon>addBOM_Basic.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\addBOM_MainDocAttr.ashx.cs">
+      <DependentUpon>addBOM_MainDocAttr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\addBOM_RelatedDoc.ashx.cs">
+      <DependentUpon>addBOM_RelatedDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\addBOM_RelatedDocAttr.ashx.cs">
+      <DependentUpon>addBOM_RelatedDocAttr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\clearbBOM_MainDocAttr.ashx.cs">
+      <DependentUpon>clearbBOM_MainDocAttr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\clearRelatedDocAttrs.ashx.cs">
+      <DependentUpon>clearRelatedDocAttrs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\deleteBOM.ashx.cs">
+      <DependentUpon>deleteBOM.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\deleteRelatedDoc.ashx.cs">
+      <DependentUpon>deleteRelatedDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\getbomtotal.ashx.cs">
+      <DependentUpon>getbomtotal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\getInstances.ashx.cs">
+      <DependentUpon>getInstances.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\getitembyid.ashx.cs">
+      <DependentUpon>getitembyid.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\getmaindocattr.ashx.cs">
+      <DependentUpon>getmaindocattr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\getRelateddocattr.ashx.cs">
+      <DependentUpon>getRelateddocattr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\getRelatedDocsByMainDocID.ashx.cs">
+      <DependentUpon>getRelatedDocsByMainDocID.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\getStaInstances.ashx.cs">
+      <DependentUpon>getStaInstances.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\getTotal.ashx.cs">
+      <DependentUpon>getTotal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\getTotalXML.ashx.cs">
+      <DependentUpon>getTotalXML.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\list.ashx.cs">
+      <DependentUpon>list.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\updateBOM_Basic.ashx.cs">
+      <DependentUpon>updateBOM_Basic.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\updateBOM_MainDoc.ashx.cs">
+      <DependentUpon>updateBOM_MainDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\bom\updateBOM_RelatedDoc.ashx.cs">
+      <DependentUpon>updateBOM_RelatedDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\dashboard\getTopCreators.ashx.cs">
+      <DependentUpon>getTopCreators.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\dashboard\getTopInstances.ashx.cs">
+      <DependentUpon>getTopInstances.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\dashboard\getUnattachFiles.ashx.cs">
+      <DependentUpon>getUnattachFiles.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\AddAttrVal.ashx.cs">
+      <DependentUpon>AddAttrVal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\AddDoc.ashx.cs">
+      <DependentUpon>AddDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\AddDocAttr.ashx.cs">
+      <DependentUpon>AddDocAttr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\allowChangeOrder.ashx.cs">
+      <DependentUpon>allowChangeOrder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\ChangeAttrOrder.ashx.cs">
+      <DependentUpon>ChangeAttrOrder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\deleteAttr.ashx.cs">
+      <DependentUpon>deleteAttr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\deleteAttrVal.ashx.cs">
+      <DependentUpon>deleteAttrVal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\DisableDoc.ashx.cs">
+      <DependentUpon>DisableDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\getAttrById.ashx.cs">
+      <DependentUpon>getAttrById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\getBasicDocById.ashx.cs">
+      <DependentUpon>getBasicDocById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\getBasicDocs.ashx.cs">
+      <DependentUpon>getBasicDocs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\getDocsByTypeID.ashx.cs">
+      <DependentUpon>getDocsByTypeID.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\getItemById.ashx.cs">
+      <DependentUpon>getItemById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\getSearchAttrs.ashx.cs">
+      <DependentUpon>getSearchAttrs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\getSourceDocs.ashx.cs">
+      <DependentUpon>getSourceDocs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\IsAttrExist.ashx.cs">
+      <DependentUpon>IsAttrExist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\IsAttrUpdateExist.ashx.cs">
+      <DependentUpon>IsAttrUpdateExist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\IsDocExist.ashx.cs">
+      <DependentUpon>IsDocExist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\IsUpdateExist.ashx.cs">
+      <DependentUpon>IsUpdateExist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\List.ashx.cs">
+      <DependentUpon>List.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\UpdateAttr.ashx.cs">
+      <DependentUpon>UpdateAttr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\updateAttrVal.ashx.cs">
+      <DependentUpon>updateAttrVal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docConfig\UpdateDoc.ashx.cs">
+      <DependentUpon>UpdateDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\dept\getDepts.ashx.cs">
+      <DependentUpon>getDepts.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\getAllBasicDocs.ashx.cs">
+      <DependentUpon>getAllBasicDocs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\getDocsById.ashx.cs">
+      <DependentUpon>getDocsById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\getExpCheck.ashx.cs">
+      <DependentUpon>getExpCheck.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\getExpCheckTotal.ashx.cs">
+      <DependentUpon>getExpCheckTotal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\getExperiments.ashx.cs">
+      <DependentUpon>getExperiments.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\getFilesById.ashx.cs">
+      <DependentUpon>getFilesById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\getSourceInstance.ashx.cs">
+      <DependentUpon>getSourceInstance.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\getTotal.ashx.cs">
+      <DependentUpon>getTotal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\transferDocs.ashx.cs">
+      <DependentUpon>transferDocs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\updateExpCheck.ashx.cs">
+      <DependentUpon>updateExpCheck.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\AddAttrVal.ashx.cs">
+      <DependentUpon>AddAttrVal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\AddDoc.ashx.cs">
+      <DependentUpon>AddDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\AddDocAttr.ashx.cs">
+      <DependentUpon>AddDocAttr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\allowChangeOrder.ashx.cs">
+      <DependentUpon>allowChangeOrder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\ChangeAttrOrder.ashx.cs">
+      <DependentUpon>ChangeAttrOrder.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\deleteAttr.ashx.cs">
+      <DependentUpon>deleteAttr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\deleteAttrVal.ashx.cs">
+      <DependentUpon>deleteAttrVal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\DisableDoc.ashx.cs">
+      <DependentUpon>DisableDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\getAttrById.ashx.cs">
+      <DependentUpon>getAttrById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\getBasicDocs.ashx.cs">
+      <DependentUpon>getBasicDocs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\getDocsByTypeID.ashx.cs">
+      <DependentUpon>getDocsByTypeID.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\getItemById.ashx.cs">
+      <DependentUpon>getItemById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\getSearchAttrs.ashx.cs">
+      <DependentUpon>getSearchAttrs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\IsAttrExist.ashx.cs">
+      <DependentUpon>IsAttrExist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\IsAttrUpdateExist.ashx.cs">
+      <DependentUpon>IsAttrUpdateExist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\IsDocExist.ashx.cs">
+      <DependentUpon>IsDocExist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\IsUpdateExist.ashx.cs">
+      <DependentUpon>IsUpdateExist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\List.ashx.cs">
+      <DependentUpon>List.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\UpdateAttr.ashx.cs">
+      <DependentUpon>UpdateAttr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\updateAttrVal.ashx.cs">
+      <DependentUpon>updateAttrVal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\tempdocConfig\UpdateDoc.ashx.cs">
+      <DependentUpon>UpdateDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\docType\getDocTypes.ashx.cs">
+      <DependentUpon>getDocTypes.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\addAttr.ashx.cs">
+      <DependentUpon>addAttr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\addDoc.ashx.cs">
+      <DependentUpon>addDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\deleteDoc.ashx.cs">
+      <DependentUpon>deleteDoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\getDocById.ashx.cs">
+      <DependentUpon>getDocById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\getDocs.ashx.cs">
+      <DependentUpon>getDocs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\search.ashx.cs">
+      <DependentUpon>search.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\doc\updateAttr.ashx.cs">
+      <DependentUpon>updateAttr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\file\fileUpload.ashx.cs">
+      <DependentUpon>fileUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\task\getTaskIdByDocProfileID.ashx.cs">
+      <DependentUpon>getTaskIdByDocProfileID.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\task\getTaskIdByUrl.ashx.cs">
+      <DependentUpon>getTaskIdByUrl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\user\getTasksById.ashx.cs">
+      <DependentUpon>getTasksById.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\user\getUsers.ashx.cs">
+      <DependentUpon>getUsers.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\user\login.ashx.cs">
+      <DependentUpon>login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\utils\getAppValue.ashx.cs">
+      <DependentUpon>getAppValue.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMng\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryMng\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMng\AddDocAttrs.aspx.cs">
+      <DependentUpon>AddDocAttrs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryMng\AddDocAttrs.aspx.designer.cs">
+      <DependentUpon>AddDocAttrs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMng\AddDocs.aspx.cs">
+      <DependentUpon>AddDocs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryMng\AddDocs.aspx.designer.cs">
+      <DependentUpon>AddDocs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMng\AddSave.aspx.cs">
+      <DependentUpon>AddSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryMng\AddSave.aspx.designer.cs">
+      <DependentUpon>AddSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMng\DocInstanceChoose.aspx.cs">
+      <DependentUpon>DocInstanceChoose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryMng\DocInstanceChoose.aspx.designer.cs">
+      <DependentUpon>DocInstanceChoose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMng\DocInstancesChoose.aspx.cs">
+      <DependentUpon>DocInstancesChoose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryMng\DocInstancesChoose.aspx.designer.cs">
+      <DependentUpon>DocInstancesChoose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMng\InstanceAdd.aspx.cs">
+      <DependentUpon>InstanceAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryMng\InstanceAdd.aspx.designer.cs">
+      <DependentUpon>InstanceAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMng\InstanceList.aspx.cs">
+      <DependentUpon>InstanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryMng\InstanceList.aspx.designer.cs">
+      <DependentUpon>InstanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMng\InventoryType.aspx.cs">
+      <DependentUpon>InventoryType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryMng\InventoryType.aspx.designer.cs">
+      <DependentUpon>InventoryType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMng\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryMng\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMng\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryMng\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PwdManager.aspx.cs">
+      <DependentUpon>PwdManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PwdManager.aspx.designer.cs">
+      <DependentUpon>PwdManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RoleManager.aspx.cs">
+      <DependentUpon>RoleManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoleManager.aspx.designer.cs">
+      <DependentUpon>RoleManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManager.aspx.cs">
+      <DependentUpon>UserManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManager.aspx.designer.cs">
+      <DependentUpon>UserManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRole.aspx.cs">
+      <DependentUpon>UserRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRole.aspx.designer.cs">
+      <DependentUpon>UserRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="util\correctCreators.aspx.cs">
+      <DependentUpon>correctCreators.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="util\correctCreators.aspx.designer.cs">
+      <DependentUpon>correctCreators.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.Dll\App.Dll.csproj">
+      <Project>{2159DFFE-6470-4C41-A528-FE5F08FD177C}</Project>
+      <Name>App.Dll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App.Model\App.Model.csproj">
+      <Project>{386617F8-D0E1-40CD-94B3-2016E8A914D7}</Project>
+      <Name>App.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\AddDoc.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\IsDocExist.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\AddDocAttr.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\List.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\getItemById.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\DisableDoc.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\IsUpdateExist.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\UpdateDoc.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\getAttrById.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\IsAttrExist.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\IsAttrUpdateExist.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\UpdateAttr.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\deleteAttr.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\ChangeAttrOrder.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\tempdocConfig\allowChangeOrder.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\user\getUsers.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\dept\getDepts.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\file\fileUpload.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Avatar\" />
+    <Folder Include="data\excel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\doc\addDoc.ashx" />
+    <Content Include="handlers\doc\addAttr.ashx" />
+    <Content Include="handlers\doc\getDocById.ashx" />
+    <Content Include="handlers\doc\getDocs.ashx" />
+    <Content Include="handlers\doc\updateAttr.ashx" />
+    <Content Include="handlers\doc\deleteDoc.ashx" />
+    <Content Include="handlers\user\login.ashx" />
+    <Content Include="handlers\user\getTasksById.ashx" />
+    <Content Include="handlers\task\getTaskIdByUrl.ashx" />
+    <Content Include="handlers\task\getTaskIdByDocProfileID.ashx" />
+    <Content Include="handlers\tempdocConfig\getSearchAttrs.ashx" />
+    <Content Include="handlers\doc\search.ashx" />
+    <Content Include="handlers\tempdocConfig\getBasicDocs.ashx" />
+    <Content Include="handlers\tempdocConfig\AddAttrVal.ashx" />
+    <Content Include="handlers\docType\getDocTypes.ashx" />
+    <Content Include="handlers\tempdocConfig\updateAttrVal.ashx" />
+    <Content Include="handlers\tempdocConfig\deleteAttrVal.ashx" />
+    <Content Include="handlers\tempdocConfig\getDocsByTypeID.ashx" />
+    <Content Include="handlers\docConfig\AddAttrVal.ashx" />
+    <Content Include="handlers\docConfig\AddDoc.ashx" />
+    <Content Include="handlers\docConfig\AddDocAttr.ashx" />
+    <Content Include="handlers\docConfig\allowChangeOrder.ashx" />
+    <Content Include="handlers\docConfig\ChangeAttrOrder.ashx" />
+    <Content Include="handlers\docConfig\deleteAttr.ashx" />
+    <Content Include="handlers\docConfig\deleteAttrVal.ashx" />
+    <Content Include="handlers\docConfig\DisableDoc.ashx" />
+    <Content Include="handlers\docConfig\getAttrById.ashx" />
+    <Content Include="handlers\docConfig\getBasicDocs.ashx" />
+    <Content Include="handlers\docConfig\getDocsByTypeID.ashx" />
+    <Content Include="handlers\docConfig\getItemById.ashx" />
+    <Content Include="handlers\docConfig\getSearchAttrs.ashx" />
+    <Content Include="handlers\docConfig\IsAttrExist.ashx" />
+    <Content Include="handlers\docConfig\IsAttrUpdateExist.ashx" />
+    <Content Include="handlers\docConfig\IsDocExist.ashx" />
+    <Content Include="handlers\docConfig\IsUpdateExist.ashx" />
+    <Content Include="handlers\docConfig\List.ashx" />
+    <Content Include="handlers\docConfig\UpdateAttr.ashx" />
+    <Content Include="handlers\docConfig\updateAttrVal.ashx" />
+    <Content Include="handlers\docConfig\UpdateDoc.ashx" />
+    <Content Include="handlers\docConfig\getBasicDocById.ashx" />
+    <Content Include="handlers\doc\transferDocs.ashx" />
+    <Content Include="handlers\doc\getSourceInstance.ashx" />
+    <Content Include="handlers\doc\getAllBasicDocs.ashx" />
+    <Content Include="handlers\doc\getDocsById.ashx" />
+    <Content Include="handlers\doc\getExperiments.ashx" />
+    <Content Include="handlers\utils\getAppValue.ashx" />
+    <Content Include="handlers\doc\getTotal.ashx" />
+    <Content Include="handlers\bom\addBOM_Basic.ashx" />
+    <Content Include="handlers\bom\updateBOM_Basic.ashx" />
+    <Content Include="handlers\docConfig\getSourceDocs.ashx" />
+    <Content Include="handlers\bom\updateBOM_MainDoc.ashx" />
+    <Content Include="handlers\bom\clearbBOM_MainDocAttr.ashx" />
+    <Content Include="handlers\bom\addBOM_MainDocAttr.ashx" />
+    <Content Include="handlers\bom\getRelatedDocsByMainDocID.ashx" />
+    <Content Include="handlers\bom\addBOM_RelatedDoc.ashx" />
+    <Content Include="handlers\bom\addBOM_RelatedDocAttr.ashx" />
+    <Content Include="handlers\bom\activateBOM.ashx" />
+    <Content Include="handlers\bom\getitembyid.ashx" />
+    <Content Include="handlers\bom\getmaindocattr.ashx" />
+    <Content Include="handlers\bom\getRelateddocattr.ashx" />
+    <Content Include="handlers\bom\updateBOM_RelatedDoc.ashx" />
+    <Content Include="handlers\bom\clearRelatedDocAttrs.ashx" />
+    <Content Include="handlers\bom\deleteRelatedDoc.ashx" />
+    <Content Include="handlers\bom\deleteBOM.ashx" />
+    <Content Include="handlers\bom\list.ashx" />
+    <Content Include="handlers\bom\getTotal.ashx" />
+    <Content Include="handlers\bom\getInstances.ashx" />
+    <Content Include="handlers\bom\getbomtotal.ashx" />
+    <Content Include="handlers\bom\getStaInstances.ashx" />
+    <Content Include="handlers\bom\getTotalXML.ashx" />
+    <Content Include="handlers\doc\getFilesById.ashx" />
+    <Content Include="handlers\doc\getExpCheck.ashx" />
+    <Content Include="handlers\doc\getExpCheckTotal.ashx" />
+    <Content Include="handlers\doc\updateExpCheck.ashx" />
+    <Content Include="handlers\dashboard\getUnattachFiles.ashx" />
+    <Content Include="handlers\dashboard\getTopInstances.ashx" />
+    <Content Include="handlers\dashboard\getTopCreators.ashx" />
+    <None Include="resources\uploadify-v3.1\.htaccess" />
+    <None Include="resources\uploadify-v3.1\check-exists.php" />
+    <None Include="resources\uploadify-v3.1\uploadify.php" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58193</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

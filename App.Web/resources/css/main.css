@@ -1,0 +1,683 @@
+﻿body
+{
+    font: 13px 微软雅黑;
+    background: url(/resources/img/body-bg.png) repeat 0 0;
+    color: #333;
+}
+/************************基本样式************************************************/
+.hidden
+{
+    display: none;
+}
+.red
+{
+    color: Red;
+    margin-left: 5px;
+}
+.pull_left
+{
+    float: left;
+}
+.pull_right
+{
+    float: right;
+}
+.clear
+{
+    clear: both;
+}
+.relative
+{
+    position: relative;
+}
+.abs
+{
+    position: absolute;
+}
+.dash_border
+{
+    border: 1px solid #333;
+}
+.normallink
+{
+    text-decoration: none;
+    color: #333;
+}
+.rel_link
+{
+    margin-left: 10px;
+}
+.btn
+{
+    display: inline-block;
+    padding: 4px;
+    margin-bottom: 0;
+    line-height: 20px;
+    color: #333;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    border-bottom-color: #b3b3b3;
+    cursor: pointer;
+}
+.btn_primary
+{
+    background-color: #0074cc;
+    color: #fff;
+}
+.btn_large
+{
+    display: block;
+    padding: 7px;
+}
+.btn_del
+{
+    background-color: #ff0084;
+}
+a.btn
+{
+    text-decoration: none;
+}
+.message
+{
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.warning
+{
+    /*border:1px solid Yellow;*/
+}
+.error
+{
+    border: 1px solid Red;
+}
+.center
+{
+    text-align: center;
+}
+.right
+{
+    text-align: right;
+}
+.pagetitle
+{
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.three_col_left
+{
+    width: 32%;
+}
+.three_col_right
+{
+    width: 64%;
+}
+/**************************************顶部样式***************************************/
+.topnav
+{
+    background: #58B4F5 url(/resources/img/headerbg.jpg) no-repeat;
+    height: 95px;
+    padding-top: 10px;
+    padding-left: 30px;
+    color: White;
+}
+.topnav > div
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.topnav .title
+{
+    font-size: 35px;
+    font-weight: bold;
+}
+.topnav .siteinfo .userinfo
+{
+    right: 50px;
+    top: 20px;
+}
+/**************************整体宽度*****************************************/
+#mainwrapper
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+/*****************************左边菜单样式***********************************/
+#mainmenu
+{
+    width: 200px;
+}
+#mainmenu ul li
+{
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+#mainmenu ul li a
+{
+    color: #4A515B;
+    background: #E9E9E9;
+    border: 1px solid #D5D5D5;
+    padding: 10px 8px;
+    display: block;
+    text-decoration: none;
+}
+#mainmenu ul li a:hover, #mainmenu ul li a.selected
+{
+    color: #FFF;
+    background: #4A515B;
+    border-color: #2B2E33;
+}
+/****************************主体内容样式********************************/
+#container
+{
+    width: 775px;
+    margin-left: 20px;
+}
+#submenu ul li
+{
+    float: left;
+}
+#submenu .tabitem
+{
+    width: 140px;
+    border-bottom: 1px solid #c7c7c7;
+    height: 23px;
+    padding: 5px;
+    background: #e7e7e7;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+#submenu .tabitem a
+{
+    color: #555;
+    text-decoration: none;
+}
+#container .tabcontent
+{
+    border-bottom-color: #fafafa;
+    background: #fafafa;
+    min-height: 500px;
+    padding: 10px;
+}
+#submenu .selected
+{
+    border: 1px solid #c7c7c7;
+    border-bottom-color: #fafafa;
+    background-color: #fafafa;
+}
+/******************************表单样式**********************/
+fieldset
+{
+    padding: 10px !important;
+    margin: 10px !important;
+    color: #333;
+    border: 1px solid #999 !important;
+}
+legend
+{
+    color: #999;
+    font-weight: 800 !important;
+    background: #fff;
+}
+.form .control_group
+{
+    margin-bottom: 10px;
+}
+.form .control_label
+{
+    float: left;
+    width: 140px;
+    padding-top: 5px;
+    text-align: right;
+}
+.form .controls
+{
+    margin-left: 160px;
+}
+.form .input_medium
+{
+    width: 300px;
+}
+.form .input_large
+{
+    width: 500px;
+}
+.form input[type=text]
+{
+    height: 18px;
+    padding: 4px;
+    color: #555;
+    border: 1px solid #ccc;
+}
+.form select
+{
+    padding: 3px;
+}
+.form .help_block
+{
+    margin-top: 4px;
+    color: #555;
+    font-size: 10px;
+}
+.form .multitext
+{
+    height: 50px;
+}
+.form .attritem
+{
+    border-bottom: 1px solid #555;
+    margin-bottom: 5px;
+}
+.more
+{
+    text-align: center;
+    background: #eee;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.form_actions
+{
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #eeeeee;
+    border-top: 1px solid #ddd;
+}
+.form .order_action
+{
+    right: 0;
+    top: 50px;
+    border: none;
+}
+.form .order_action span
+{
+    background-color: #e1e1e1;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+.result
+{
+    border: 1px solid #ccc;
+}
+.result p
+{
+    padding: 10px;
+    color: #333;
+    font-size: 20px;
+}
+/********************************列表样式*******************************/
+.list .listitem
+{
+    border: 1px solid #ccc;
+    background-color: #eee;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.list .item_selected
+{
+    background-color: #ffffd5;
+}
+.list .listitem input[type=checkbox]
+{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+#tranBtn
+{
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    width: 80px;
+}
+.list .listitem:hover
+{
+    background-color: #ddd;
+}
+.list .listitem:hover .abs
+{
+    display: block;
+    right: 5px;
+}
+.list .listitem label
+{
+    float: left;
+}
+.list .listitem .docinfo > li
+{
+    padding: 5px;
+}
+.list .listitem .docinfo .docitem label
+{
+    width: 140px;
+    text-align: right;
+    margin-right: 10px;
+}
+.list .listitem .docinfo a
+{
+    color: #0769AD;
+    font-weight: bold;
+    text-decoration: none;
+}
+.list .listitem .attrinfo
+{
+    margin-left: 80px;
+}
+.list .listitem .attrinfo p
+{
+    line-height: 20px;
+}
+.list .listitem .attrinfo li
+{
+    margin-bottom: 5px;
+}
+.list table
+{
+    width: 100%;
+}
+.list table thead th
+{
+    padding: 6px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+}
+.list table tbody td
+{
+    padding: 4px;
+    border: 1px solid #ccc;
+}
+.list table tbody tr:nth-child(odd)
+{
+    background-color: #f5f5f5;
+}
+.list table tbody tr:nth-child(even)
+{
+    background-color: #ffffe1;
+}
+.list table tbody tr:hover td
+{
+    background-color: #f2f2f2;
+}
+.list table .op
+{
+    width: 40px;
+}
+.list table tr.nothing
+{
+    background-color: White !important;
+    color: Red;
+    text-align: center;
+}
+.list table tr.sel td, .list table tr.sel:hover td
+{
+    background-color: White;
+}
+.list table tr.selected td
+{
+    background-color: #56abe4;
+}
+.list .instance th
+{
+    min-width: 100px;
+    vertical-align: middle;
+}
+.list .instance thead tr:first-child th
+{
+    min-width: 40px;
+}
+ul.docattrinfo li
+{
+    padding: 5px;
+}
+ul.docattrinfo li label
+{
+    font-weight: bold;
+}
+/****************详细信息样式**********************/
+.header .btn
+{
+    right: 20px;
+    top: 0;
+}
+.detailinfo .controls
+{
+    padding-top: 5px;
+}
+.detailinfo .btns
+{
+    right: 30px;
+    top: 10px;
+}
+.detailinfo .order_action
+{
+    top: 5px;
+}
+.detailinfo .attritem li
+{
+    padding: 5px;
+}
+.detailinfo .attritem label
+{
+    float: left;
+    width: 140px;
+    text-align: right;
+    margin-right: 20px;
+}
+#form .control_label
+{
+    width: 150px;
+}
+.listattr .attritem:hover
+{
+    background-color: #eee;
+}
+/**************************************选人控件样式*****************************/
+.depts_users .container
+{
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    overflow: auto;
+}
+.depts_users .sel_title
+{
+    margin-right: 10px;
+}
+.selected_users .sel_users
+{
+    height: 50px;
+    overflow: auto;
+}
+.sel_users li
+{
+    margin: 2px;
+    position: relative;
+    padding: 8px;
+    cursor: pointer;
+    float: left;
+    list-style: none;
+    color: #0073ea;
+    font-weight: bold;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+.sel_users li:hover
+{
+    background-color: #0073ea;
+    color: White;
+}
+.sel_users .user_del
+{
+    display: inline-block !important;
+    margin-left: 10px;
+}
+.userspan
+{
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.userspan a
+{
+    background-image: url(flick/images/ui-icons_ff0084_256x240.png);
+    background-position: -80px -128px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.userspan a:hover
+{
+    background-color: White;
+}
+.userspan .edit
+{
+    background-position: -64px -112px;
+}
+.fileinfo
+{
+    color: #0769AD;
+    margin-left: 10px;
+}
+/******************************编辑文档实例属性************************************/
+.attr_control
+{
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
+}
+.attr_control .controls
+{
+    margin-right: 40px;
+}
+.attr_control .attr_action
+{
+    right: 0;
+}
+.attr_control .attr_action span
+{
+    display: inline-block;
+    cursor: pointer;
+}
+.ctrl_padding
+{
+    padding-top: 5px;
+}
+/*********************attr val **************************/
+.attr_content
+{
+    max-height: 100px;
+    overflow: auto;
+}
+.attr_content .userspan
+{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+/****************** steps ******************************/
+#steps
+{
+    margin-top: 5px;
+    border-bottom: 1px solid #999;
+}
+#steps ul li
+{
+    float: left;
+    padding: 7px;
+    background-color: #eee;
+}
+#steps ul li.selected
+{
+    background-color: #666;
+    color: White;
+}
+.btnsteps
+{
+    padding: 5px;
+    margin: 5px;
+    background-color: #eee;
+}
+/**************search button****************************************/
+.searchBtn
+{
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+}
+/************************scroll to top and down buttons*************************************/
+#top_down_btns
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #eee;
+    border: 2px solid #ccc;
+}
+#top_down_btns span
+{
+    cursor: pointer;
+}
+.checkMore
+{
+    right: 20px;
+    top: 20px;
+    color: #333;
+}
+.moreConditions
+{
+    height: 115px;
+    overflow: hidden;
+}
+p.info
+{
+    margin-bottom: 10px;
+}
+.final_mess
+{
+    padding: 10px;
+    border: 1px solid #aaa;
+    margin-top: 10px;
+}
+.meta_item
+{
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.meta_item span a
+{
+    text-decoration:none;
+    color:#333;
+}
+.meta_item>a
+{
+    background-image: url(flick/images/ui-icons_ff0084_256x240.png);
+    background-position: -80px -128px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.meta_item>a:hover
+{
+    background-color: White;
+}
+.file_sel
+{
+    background-color:#50cf50;
+}
+.file_sel span a
+{
+    color:White;
+}

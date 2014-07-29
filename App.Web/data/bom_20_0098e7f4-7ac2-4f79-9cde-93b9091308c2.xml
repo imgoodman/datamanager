@@ -1,0 +1,1069 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Datas>
+  <GenerateTime>2014-07-23 11:51:56</GenerateTime>
+  <BOM ID="20" Name="MOC4试验清单" />
+  <TotalItem>23</TotalItem>
+  <Data Page="0">
+    <Item>
+      <MainDoc DocID="91" InstanceID="454">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-020" />
+          <AttrItem ID="534" Value="甚高频导航系统机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="892">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY008" />
+                <AttrItem ID="189" Value="ARJ21-700飞机甚高频导航系统机上地面试验大纲" />
+                <AttrItem ID="191" Value="E、E1、E2、E3、E4" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="926">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-027" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="927">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-031" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="934">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-037" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1036">
+              <AttrValues>
+                <AttrItem ID="424" Value="无" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="455">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-021" />
+          <AttrItem ID="534" Value="无线电高度表机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="893">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY011" />
+                <AttrItem ID="189" Value="ARJ21-700飞机无线电高度表机上地面试验大纲" />
+                <AttrItem ID="191" Value="C" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="935">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-018" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="936">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-020" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1037">
+              <AttrValues>
+                <AttrItem ID="424" Value="无" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="456">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-022" />
+          <AttrItem ID="534" Value="交通告警和防撞系统机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="888">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY009" />
+                <AttrItem ID="189" Value="ARJ21-700飞机交通告警与防撞系统机上地面试验大纲" />
+                <AttrItem ID="191" Value="C" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="918">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-013" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="919">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-037" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1030">
+              <AttrValues>
+                <AttrItem ID="424" Value="无" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="457">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-023" />
+          <AttrItem ID="534" Value="测距器机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="883">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY007" />
+                <AttrItem ID="189" Value="ARJ21-700飞机测距器机上地面试验大纲" />
+                <AttrItem ID="191" Value="D" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="899">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-008" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="900">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-014" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1022">
+              <AttrValues>
+                <AttrItem ID="424" Value="无" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="458">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-024" />
+          <AttrItem ID="534" Value="空中交通管制系统机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="889">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY005" />
+                <AttrItem ID="189" Value="ARJ21-700飞机空中交通管制机上地面试验大纲" />
+                <AttrItem ID="191" Value="D" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="920">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-029" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="921">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-037" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1031">
+              <AttrValues>
+                <AttrItem ID="424" Value="无" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="459">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-025" />
+          <AttrItem ID="534" Value="全球定位系统机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="891">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY004" />
+                <AttrItem ID="189" Value="ARJ21-700飞机全球定位系统机上地面试验大纲." />
+                <AttrItem ID="191" Value="E" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="924">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-012" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="925">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-017" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1034">
+              <AttrValues>
+                <AttrItem ID="424" Value="无" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="467">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-033" />
+          <AttrItem ID="534" Value="姿态与航向基准系统机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="895">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY013" />
+                <AttrItem ID="189" Value="ARJ21-700飞机姿态与航向基准系统机上地面试验大纲" />
+                <AttrItem ID="191" Value="E、E1、E2、E3" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="941">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-038" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="942">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-042" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="943">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-043" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="944">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-045" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1040">
+              <AttrValues>
+                <AttrItem ID="424" Value="无" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="468">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-034" />
+          <AttrItem ID="534" Value="自动定向仪机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="896">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY006" />
+                <AttrItem ID="189" Value="ARJ21-700飞机自动定向仪机上地面试验大纲" />
+                <AttrItem ID="191" Value="D" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="945">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-034" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="946">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-046" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1042">
+              <AttrValues>
+                <AttrItem ID="424" Value="无" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="474">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-040" />
+          <AttrItem ID="534" Value="气象雷达机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="890">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY2002" />
+                <AttrItem ID="189" Value="ARJ21-700飞机选装型气象雷达机上地面试验大纲" />
+                <AttrItem ID="191" Value="D" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="922">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-051" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="923">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-063" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1033">
+              <AttrValues>
+                <AttrItem ID="424" Value="E-YZZ-GC-001" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="479">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-045" />
+          <AttrItem ID="534" Value="大气数据系统机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="884">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY014" />
+                <AttrItem ID="189" Value="ARJ21-700飞机大气数据系统机上地面试验大纲" />
+                <AttrItem ID="191" Value="G、G1、G2、G3" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="901">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-062" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="902">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-075" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="903">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-080" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="904">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-098" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1023">
+              <AttrValues>
+                <AttrItem ID="424" Value="E-YZZ-GC-009" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+  </Data>
+  <Data Page="1">
+    <Item>
+      <MainDoc DocID="91" InstanceID="480">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-046" />
+          <AttrItem ID="534" Value="飞行管理系统机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="886">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY003" />
+                <AttrItem ID="189" Value="ARJ21-700飞行管理系统机上地面试验大纲" />
+                <AttrItem ID="191" Value="E" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="914">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-075" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="915">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-089" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1027">
+              <AttrValues>
+                <AttrItem ID="424" Value="E-GC-YZZ-005" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="481">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-047" />
+          <AttrItem ID="534" Value="地形提示和警告系统（TAWS）机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="885">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY010" />
+                <AttrItem ID="189" Value="ARJ21-700飞机地形提示和警告系统机上地面试验大纲必填" />
+                <AttrItem ID="191" Value="D" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="912">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-165" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="913">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-177" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1025">
+              <AttrValues>
+                <AttrItem ID="424" Value="E-YZZ-GC-029" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="484">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-050" />
+          <AttrItem ID="534" Value="惯性基准系统机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="887">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY2006" />
+                <AttrItem ID="189" Value="ARJ21-700飞机惯性基准系统机上地面试验大纲" />
+                <AttrItem ID="191" Value="D" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="916">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-049" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="917">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-063" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1029">
+              <AttrValues>
+                <AttrItem ID="424" Value="E-YZZ-GC-002" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="487">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-053" />
+          <AttrItem ID="534" Value="滑油油量指示器测量试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="3946">
+              <AttrValues>
+                <AttrItem ID="190" Value="821SY605" />
+                <AttrItem ID="189" Value="ARJ21动力装置机上地面滑油油量指示验证试验大纲" />
+                <AttrItem ID="191" Value="E" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="497">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-063" />
+          <AttrItem ID="534" Value="短舱排液地面试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="3945">
+              <AttrValues>
+                <AttrItem ID="190" Value="817SY005-A042" />
+                <AttrItem ID="189" Value="ARJ21-700飞机动力装置液体排放地面试验大纲" />
+                <AttrItem ID="191" Value="C" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="506">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-072" />
+          <AttrItem ID="534" Value="飞控系统机上地面试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1425">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2009-006" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1426">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2009-007" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1427">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-WM-YS-JB-009" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1428">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2009-015" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1429">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2009-016" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1461">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2010-029" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1462">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2010-033" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1463">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2010-037" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1465">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2010-041" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1466">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2010-044" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3950">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-WM-YS-JB-009" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3952">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-WM-YS-JB-013" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3954">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2010-031" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3955">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2010-042" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3956">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2010-043" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3971">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2011-027" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3972">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2011-033" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3973">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2011-031" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3974">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2011-042 " />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3976">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2012-037" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3977">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2012-051" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3978">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-WM-YS-JB-097" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="4316">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2013-001" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="4317">
+              <AttrValues>
+                <AttrItem ID="397" Value="HSC-SC-2013-086" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1459">
+              <AttrValues>
+                <AttrItem ID="424" Value="LHM-GC-2009-0703" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="3969">
+              <AttrValues>
+                <AttrItem ID="424" Value="YJZ-SYGC-2010-002" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="510">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC5-076" />
+          <AttrItem ID="534" Value="中央维护系统机上地面功能试验" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="894">
+              <AttrValues>
+                <AttrItem ID="190" Value="245SY002" />
+                <AttrItem ID="189" Value="ARJ21-700飞机中央维护系统机上地面试验大纲" />
+                <AttrItem ID="191" Value="G、G1" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="937">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-144" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="938">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-150" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1038">
+              <AttrValues>
+                <AttrItem ID="424" Value="E-YZZ-GC-028" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="530">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC7-012" />
+          <AttrItem ID="534" Value="中央维护系统检查" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="898">
+              <AttrValues>
+                <AttrItem ID="190" Value="245SH2001" />
+                <AttrItem ID="189" Value="ARJ21-700中央维护系统机上检查(MOC7)符合性验证条款检查大纲" />
+                <AttrItem ID="191" Value="F" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="939">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-077" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="940">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-091" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1039">
+              <AttrValues>
+                <AttrItem ID="424" Value="E-YZZ-GC-008" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="546">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC7-028" />
+          <AttrItem ID="534" Value="导航系统设计符合性检查" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="897">
+              <AttrValues>
+                <AttrItem ID="190" Value="234SY2004" />
+                <AttrItem ID="189" Value="ARJ21-700飞机导航系统机上检查大纲" />
+                <AttrItem ID="191" Value="D、D1、D2、D3、D4、D5、D6" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="905">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-127" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="906">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-129" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="907">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-171" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="908">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-175" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="909">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-176" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="910">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-183" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="911">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-189" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1024">
+              <AttrValues>
+                <AttrItem ID="424" Value="E-YZZ-GC-031" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="791">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC6-205" />
+          <AttrItem ID="534" Value="无线电高度表试飞" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1093">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-188" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+  </Data>
+  <Data Page="2">
+    <Item>
+      <MainDoc DocID="91" InstanceID="796">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC6-210" />
+          <AttrItem ID="534" Value="全球定位系统（GPS）" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1377">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-195" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1378">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-196" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="76">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1383">
+              <AttrValues>
+                <AttrItem ID="424" Value="E-YZZ-GC-033" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="807">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC6-221" />
+          <AttrItem ID="534" Value="中央维护系统" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1085">
+              <AttrValues>
+                <AttrItem ID="190" Value="817SY005-A022" />
+                <AttrItem ID="189" Value="ARJ21-700飞机型号合格审定试飞大纲—中央维护系统分册" />
+                <AttrItem ID="191" Value="F" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+        <RelatedDocItem DocID="71">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1086">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-155" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1087">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-197" />
+              </AttrValues>
+            </InstanceItem>
+            <InstanceItem InstanceID="1088">
+              <AttrValues>
+                <AttrItem ID="397" Value="E-YZZ-SC-JB-198" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+    <Item>
+      <MainDoc DocID="91" InstanceID="1392">
+        <AttrValues>
+          <AttrItem ID="533" Value="MOC6-286" />
+          <AttrItem ID="534" Value="导航系统试飞" />
+        </AttrValues>
+      </MainDoc>
+      <RelatedDocs>
+        <RelatedDocItem DocID="43">
+          <InstanceDatas>
+            <InstanceItem InstanceID="1091">
+              <AttrValues>
+                <AttrItem ID="190" Value="817SY005-A018" />
+                <AttrItem ID="189" Value="ARJ21-700飞机型号合格审定验证试飞大纲—导航系统分册" />
+                <AttrItem ID="191" Value="K" />
+              </AttrValues>
+            </InstanceItem>
+          </InstanceDatas>
+        </RelatedDocItem>
+      </RelatedDocs>
+    </Item>
+  </Data>
+</Datas>

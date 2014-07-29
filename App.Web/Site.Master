@@ -1,0 +1,233 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="App.Web.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>适航工程中心数据管理系统</title>
+    <%--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />--%>
+    <link rel="Stylesheet" href="/resources/css/flick/jquery-ui-1.10.4.custom.min.css" />
+    <link rel="Stylesheet" href="/resources/css/main.css" />
+    <link rel="Stylesheet" href="/resources/css/reset.css" />
+    <link rel="Stylesheet" href="/resources/css/infoTip.css" />
+    <link rel="Stylesheet" href="/resources/dist/themes/default/style.min.css" />
+    <link rel="Stylesheet" href="/resources/css/uploadify.css" />
+    <link rel="Stylesheet" href="/resources/css/jquery.loader.min.css" />
+    <link href="/CSS/style.css" type="text/css" rel="stylesheet" />
+    <script src="/includes/JQScript.js" type="text/javascript"></script>
+    <script src="/includes/Category.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/resources/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.app.js"></script>
+    <script type="text/javascript" src="/resources/js/infoTip.js"></script>
+    <script type="text/javascript" src="/resources/dist/jstree.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.uploadify-3.1.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.loader.min.js"></script>
+    <script type="text/javascript" src="/resources/js/json2.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="topnav">
+        <div>
+            <img src="/resources/img/flogo.jpg" alt="适航工程中心数据管理系统" />
+            <div class="siteinfo relative">
+                <span class="title">适航工程中心数据管理系统</span>
+                <div class="userinfo abs">
+                    欢迎您：<span class="username"><asp:Label ID="lbUsername" runat="server" Text="username"></asp:Label></span>
+                    <asp:HiddenField ID="userid" runat="server" />
+                    <asp:HiddenField ID="isadmin" runat="server" />
+                    <a href="/logout.aspx" class="normallink">退出系统</a>
+                    <input type="hidden" id="isVirtual" value="2" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mainwrapper">
+        <div id="mainmenu" class="pull_left">
+            <ul>
+                <li><a href="/Default.aspx">首页</a></li>
+            </ul>
+        </div>
+        <div id="container" class="pull_left">
+            <div id="submenu">
+                <div class="pull_left tabitem selected hidden">
+                    <a href="/DocConfig/Add.aspx">配置新的文档</a></div>
+            </div>
+            <div class="clear tabcontent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div id="top_down_btns">
+        <span class="ui-icon ui-icon-arrowthickstop-1-n toTop" title="返回到顶部"></span>
+        <br />
+        <span class="ui-icon ui-icon-arrowthickstop-1-s toBottom" title="返回到底部"></span>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //scroll to top and down
+            $(".toTop").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 1000);
+            });
+            $(".toBottom").click(function () {
+                $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+            });
+
+            var userid = $("#userid").val();
+            var url = window.location.pathname;
+            //var path = window.location.href;
+            var search = window.location.search;
+            url = url.substr(1, url.length);
+            var url_pro = url + search;
+            //console.log(url + "," + url_pro);
+            $.ajax({
+                type: "POST",
+                url: "/handlers/user/getTasksById.ashx",
+                data: { userid: userid },
+                dataType: "json",
+                success: function (res) {
+                    if (res != "") {
+                        $.each(res, function (i, item) {
+                            if (item.ParentID == "0") {
+                                var $li = $("<li>").html("<a id='t" + item.ID + "' href='/" + item.Url + "' title='" + item.TaskName + "'>" + item.TaskName + "</a>");
+                                $li.appendTo($("#mainmenu ul"));
+                            }
+                        });
+                        //$("<li>").html("<a id='tForAdd' href='/Doc/Forward.aspx?action=add' title='新增文档实例'>新增文档实例</a>").appendTo($("#mainmenu ul"));
+                        //$("<li>").html("<a id='tForList' href='/Doc/Forward.aspx?action=list' title='查看文档实例'>查看文档实例</a>").appendTo($("#mainmenu ul"));
+                        //bind children menu and set selection
+                        $.each(res, function (i, item) {
+                            if ((url == item.Url || url_pro == item.Url) && item.ParentID != "0") {
+                                //a child menu is selected
+                                //find its parent and selected
+                                //console.log(item.ID);
+                                $.each(res, function (j, jitem) {
+                                    if (jitem.ID == item.ParentID) {
+                                        //$("#mainmenu a[href='/" + jitem.Url + "']").addClass("selected");
+                                        $("#t" + jitem.ID).addClass("selected");
+                                    }
+                                });
+                                //find its sibings and selected
+                                $.each(res, function (j, jitem) {
+                                    if (jitem.ParentID == item.ParentID) {
+                                        var $div = $("<div>").addClass("pull_left tabitem").html("<a id='t" + jitem.ID + "' href='/" + jitem.Url + "' title='" + jitem.TaskName + "'>" + showLongString(jitem.TaskName, 10) + "</a>");
+                                        $div.appendTo($("#submenu"));
+                                        if (jitem.Url == url || jitem.Url == url_pro) {
+                                            $div.addClass("selected");
+                                        }
+                                    }
+                                });
+                                return false;
+                            }
+                        });
+
+                        if (url == "Doc/Add.aspx" || url == "Doc/MyList.aspx" || url == "Doc/Transfer.aspx" || url == "Doc/MyTableList.aspx" || url == "Doc/Package.aspx" || url=="Doc/DocRedundantCheck.aspx") {
+                            var docid = request("id");
+                            $("#t64").addClass("selected");
+                            //console.log(docid);
+                            $.ajax({
+                                type: "POST",
+                                url: "/handlers/docconfig/getbasicdocbyid.ashx",
+                                data: { id: docid },
+                                dataType: "json",
+                                success: function (res) {
+                                    $("<div>").prop({ id: "tForDocAdd" }).addClass("pull_left tabitem").html("<a href='/Doc/Add.aspx?ID=" + docid + "' title='新增" + res.DocName + "'>新增" + showLongString(res.DocName, 6) + "</a>").appendTo($("#submenu"));
+                                    $("<div>").prop({ id: "tForDocList" }).addClass("pull_left tabitem").html("<a href='/Doc/MyTableList.aspx?ID=" + docid + "' title='查看" + res.DocName + "列表'>" + showLongString(res.DocName, 6) + "列表</a>").appendTo($("#submenu"));
+                                    $("<div>").prop({ id: "tForDocTran" }).addClass("pull_left tabitem").html("<a href='/Doc/Transfer.aspx?ID=" + docid + "' title='移交" + res.DocName + "'>移交" + showLongString(res.DocName, 6) + "</a>").appendTo($("#submenu"));
+                                    $("<div>").prop({ id: "tForDocPack" }).addClass("pull_left tabitem").html("<a href='/Doc/Package.aspx?ID=" + docid + "' title='打包下载" + res.DocName + "'>打包" + showLongString(res.DocName, 6) + "</a>").appendTo($("#submenu"));
+                                   
+                                    if (url == "Doc/Add.aspx") {
+                                        $("#tForDocAdd").addClass("selected");
+                                    } else if (url == "Doc/MyList.aspx" || url == "Doc/MyTableList.aspx") {
+                                        $("#tForDocList").addClass("selected");
+                                    } else if (url == "Doc/Transfer.aspx") {
+                                        $("#tForDocTran").addClass("selected");
+                                    } else {
+                                        $("#tForDocPack").addClass("selected");
+                                    }
+                                }
+                            });
+                        }
+                        if (url == "Doc/List.aspx" || url == "Doc/TableList.aspx") {
+                            $("#t65").addClass("selected");
+                        }
+                        if (url == "Doc/Forward.aspx") {
+                            var action = request("action");
+                            if (action == "admin") {
+                                $("#t65").addClass("selected");
+                            } else {
+                                $("#t64").addClass("selected");
+                                $("<div>").prop({ id: "tForAdd" }).addClass("pull_left tabitem").html("<a href='/Doc/Forward.aspx?action=add'>新增文档数据</a>").appendTo($("#submenu"));
+                                $("<div>").prop({ id: "tForList" }).addClass("pull_left tabitem").html("<a href='/Doc/Forward.aspx?action=list'>查看文档数据</a>").appendTo($("#submenu"));
+                                $("<div>").prop({ id: "tForTran" }).addClass("pull_left tabitem").html("<a href='/Doc/Forward.aspx?action=transfer'>移交文档数据</a>").appendTo($("#submenu"));
+                                $("<div>").prop({ id: "tForPack" }).addClass("pull_left tabitem").html("<a href='/Doc/Forward.aspx?action=package'>打包文档数据</a>").appendTo($("#submenu"));
+                                $("<div>").prop({ id: "tForCheck" }).addClass("pull_left tabitem").html("<a href='/Doc/DocRedundantCheck.aspx'>检查文档数据</a>").appendTo($("#submenu"));
+                                if (action == "add") {
+                                    $("#tForAdd").addClass("selected");
+                                } else if (action == "list") {
+                                    $("#tForList").addClass("selected");
+                                } else if (action == "transfer") {
+                                    $("#tForTran").addClass("selected");
+                                } else if (action == "package") {
+                                    $("#tForPack").addClass("selected");
+                                } else {
+                                    $("#tForCheck").addClass("selected");
+                                }
+                            }
+                        }
+                        //特殊处理的
+                        if (url == "DocConfig/Profile.aspx") {
+                            //$("#mainmenu a[href='/DocConfig/Profile.aspx']").addClass("selected");
+                            $.ajax({
+                                type: "post",
+                                url: "/handlers/task/gettaskidbyurl.ashx",
+                                data: { url: "DocConfig/List.aspx" },
+                                success: function (res) {
+                                    $("#t" + res).addClass("selected");
+                                    $("<div>").addClass("pull_left tabitem").html("<a href='/DocConfig/Add.aspx'>新增文档对象</a>").appendTo($("#submenu"));
+                                    $("<div>").addClass("pull_left tabitem selected").html("<a href='/DocConfig/List.aspx'>文档对象列表</a>").appendTo($("#submenu"));
+                                    $("<div>").addClass("pull_left tabitem").html("<a href='/DocumentType.aspx'>文档类型管理</a>").appendTo($("#submenu"));
+                                    $("<div>").addClass("pull_left tabitem").html("<a href='/DocConfig/AttrRelate.aspx'>关联文档对象</a>").appendTo($("#submenu"));
+                                    $("<div>").addClass("pull_left tabitem").html("<a href='/AttrRelationList.aspx'>文档对象关联列表</a>").appendTo($("#submenu"));
+                                }
+                            });
+                        }
+
+                        if (url == "Doc/Profile.aspx") {
+                            var id = request("id");
+                            //console.log(id);
+                            $.ajax({
+                                type: "post",
+                                url: "/handlers/task/getTaskIdByDocProfileID.ashx",
+                                data: { id: id },
+                                dataType: "",
+                                success: function (res) {
+                                    //console.log(res);
+                                    var rArray = res.split('_');
+                                    $("#t" + rArray[0]).addClass("selected");
+                                    //$("<div>").addClass("pull_left tabitem").html("<a href='/Doc/Add.aspx?ID=" + rArray[1] + "'>新增" + rArray[2] + "</a>").appendTo($("#submenu"));
+                                    // $("<div>").addClass("pull_left tabitem selected").html("<a href='/Doc/List.aspx?ID=" + rArray[1] + "'>" + rArray[2] + "列表</a>").appendTo($("#submenu"));
+                                }
+                            });
+                        }
+                    }
+                }
+            });
+        }).ajaxStart(function () {
+            $.loader({
+                className: "blue-with-image-2",
+                content: '数据加载中,请稍候...'
+            });
+        }).ajaxComplete(function () {
+            $.loader('close');
+        });
+    </script>
+    </form>
+    <!-- 放在最后，加快页面加载-->
+</body>
+</html>

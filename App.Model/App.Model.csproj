@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{386617F8-D0E1-40CD-94B3-2016E8A914D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App.Model</RootNamespace>
+    <AssemblyName>App.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseModel.cs" />
+    <Compile Include="Data\BasicBOM.cs" />
+    <Compile Include="Data\BOM.cs" />
+    <Compile Include="Data\BOMDataItem.cs" />
+    <Compile Include="Data\BOMInstance.cs" />
+    <Compile Include="Data\BOMRelatedDataItem.cs" />
+    <Compile Include="Data\DocumentInstance.cs" />
+    <Compile Include="MetaData\BasicData.cs" />
+    <Compile Include="MetaData\BasicDoc.cs" />
+    <Compile Include="MetaData\BOMDocument.cs" />
+    <Compile Include="MetaData\BOMDocumentAttr.cs" />
+    <Compile Include="MetaData\Department.cs" />
+    <Compile Include="MetaData\DeptJSON.cs" />
+    <Compile Include="MetaData\DocType.cs" />
+    <Compile Include="MetaData\Document.cs" />
+    <Compile Include="MetaData\DocumentAttr.cs" />
+    <Compile Include="MetaData\DocumentAttrVal.cs" />
+    <Compile Include="MetaData\Experiment.cs" />
+    <Compile Include="MetaData\Inventory.cs" />
+    <Compile Include="MetaData\InventoryInstance.cs" />
+    <Compile Include="MetaData\InventoryInstanceDooc.cs" />
+    <Compile Include="MetaData\InventoryType.cs" />
+    <Compile Include="MetaData\Task.cs" />
+    <Compile Include="MetaData\User.cs" />
+    <Compile Include="NameValuePair.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
